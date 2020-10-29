@@ -14,7 +14,7 @@ img.forEach((elem) => {
 });
 
 
-async function supportWebpCheck() {
+function supportWebpCheck() {
   var elem = document.createElement('canvas');
 
   if (!!(elem.getContext && elem.getContext('2d'))) {
