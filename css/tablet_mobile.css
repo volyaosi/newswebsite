@@ -4,13 +4,8 @@
 }
 
 #main-nav .container {
-  grid-template-columns: 1fr;
-  grid-gap: 1.2rem;
-}
-
-#main-nav ul,
-#main-nav .logo {
-  justify-self: center;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
 }
 
 #main-nav ul li a {
