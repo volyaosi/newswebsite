@@ -1,7 +1,7 @@
 let img = document.querySelectorAll('img');
 
 img.forEach((elem) => {
-  if (supportsWebp) {
+  if (supportsWebp()) {
     elem.src = elem.getAttribute('data-webp');
   } else {
     elem.src = elem.getAttribute('data-otherImg');
