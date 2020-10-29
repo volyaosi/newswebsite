@@ -24,6 +24,7 @@ body {
     background: var(--light-color);
     display: grid;
     grid-template-rows: auto auto 1fr auto;
+    padding-bottom: 0;
 }
 
 a {
