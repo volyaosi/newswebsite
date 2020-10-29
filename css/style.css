@@ -22,7 +22,8 @@ body {
     font-family: 'Lato', sans-serif;
     line-height: 1.5;
     background: var(--light-color);
-    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
 }
 
 a {
