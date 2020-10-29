@@ -1,21 +1,25 @@
-let img = document.querySelectorAll('img');
-
+const  img = document.querySelectorAll('img');
+const isSupported = supportWebpCheck();
 img.forEach((elem) => {
-  let isSupported = supportWebpCheck();
-  if (isSupported) {
-    elem.src = elem.getAttribute('data-webp');
-  } else {
+
+  console.log(isSupported);
+
+  if (!isSupported) {
     elem.src = elem.getAttribute('data-otherImg');
+    console.log(elem.src);
+  } else {
+    elem.src = elem.getAttribute('data-webp');
+    console.log(elem.src);
   }
 });
 
 
 async function supportWebpCheck() {
   var elem = document.createElement('canvas');
-  console.log('hello');
+
   if (!!(elem.getContext && elem.getContext('2d'))) {
       // was able or not to get WebP representation
-      console.log(elem.toDataURL('image/webp').indexOf('data:image/webp') == 0);
+
       return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
   }
 
