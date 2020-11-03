@@ -52,4 +52,8 @@
   .l-heading {
     font-size: 2rem;
   }
+
+  #showcase .showcase-container {
+    height: 450px;
+  }
 }
